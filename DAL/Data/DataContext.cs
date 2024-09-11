@@ -1,11 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
-using WebApi.Data.Configurations;
-using WebApi.Entities;
+﻿using DAL.Data.Configurations;
+using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace WebApi.Data
+namespace DAL.Data
 {
     public class DataContext : DbContext
     {
+
+
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public virtual DbSet<Student> Students { get; set; }
 

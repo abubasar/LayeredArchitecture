@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.Reflection.Emit;
-using WebApi.Entities;
 
-namespace WebApi.Data.Configurations
+namespace DAL.Data.Configurations
 {
     public class StudentConfiguration : IEntityTypeConfiguration<Student>
     {

@@ -1,10 +1,9 @@
-﻿namespace WebApi.Entities
+﻿namespace BLL.ViewModel
 {
-    public class Student
+    public class StudentViewModel
     {
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? Grade { get; set; }
-        public DateTime CreatedOn { get; set; }
     }
 }
